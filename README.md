@@ -76,7 +76,7 @@ ON ci.city_id = c.city_id
 
 ```
 
-10. **Top Selling Products by City**  
+5. **Top Selling Products by City**  
    What are the top 3 selling products in each city based on sales volume?
 
 ```
@@ -98,7 +98,7 @@ GROUP BY 1,2) as t1
 WHERE rank <= 3
 ```
 
-12. **Customer Segmentation by City**  
+6. **Customer Segmentation by City**  
    How many unique customers are there in each city who have purchased coffee products?
 
 ```
@@ -112,7 +112,7 @@ GROUP BY 1
 ORDER BY 2 DESC;
 ```
 
-14. **Average Sale vs Rent**  
+7. **Average Sale vs Rent**  
    Find each city and their average sale per customer and avg rent per customer
 
 ```
@@ -150,7 +150,7 @@ ON cr.city_name = ct.city_name
 ORDER BY 5 DESC
 ```
 
-16. **Monthly Sales Growth**  
+8. **Monthly Sales Growth**  
    Sales growth rate: Calculate the percentage growth (or decline) in sales over different time periods (monthly).
 ```
 WITH monthly_sales AS(
